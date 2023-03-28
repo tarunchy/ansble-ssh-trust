@@ -1,0 +1,10 @@
+---
+- name: Install nginx on my_hosts
+  hosts: my_hosts
+  become: yes
+  tasks:
+    - name: Install nginx
+      dnf:
+        name: nginx
+        state: present
+
